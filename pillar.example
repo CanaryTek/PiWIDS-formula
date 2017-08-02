@@ -1,0 +1,11 @@
+piwids:
+  probe:
+    capture_interface: wlan0
+  # List of ESSID to monitor, and the MACS of allowed AP for each ESSID
+  monitored_essid:
+    ESSIS1:
+      - 84:18:3A:69:10:28
+      - 84:18:3A:28:BF:88
+    MYWLAN:
+      - 84:18:3A:69:10:28
+      - 84:18:3A:28:BF:88

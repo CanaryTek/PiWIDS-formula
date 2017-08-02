@@ -1,0 +1,13 @@
+[Unit]
+Description=Kismet
+After=network.target 
+
+[Service]
+EnvironmentFile=-/etc/default/kismet
+ExecStart=/usr/bin/kismet_server
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
